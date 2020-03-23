@@ -42,9 +42,11 @@ Block level elements start on a new line and take up the space of the whole enti
 Also, inline elements ignore the width and height properties while block level elemends do now.
 
 3. What are the 4 areas of the box model?
+
 Content, Padding, Border, and Margin
 
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+
 Align-items works on the cross axis, the vertical axis.
 
 5. Explain why git is valuable to a team of developers.
