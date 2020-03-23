@@ -84,12 +84,28 @@ p {
     justify-content: space-between;
     padding-right: 50px;
     margin-bottom: 40px; 
+    animation-name: a1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes a1 {
+    from{background-color: white;}
+    to{background-color: blue;}
 }
 
 .header .nav a {
     text-decoration: none;
     color: black;
     font-size: 14px;
+    animation-name: a2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes a2 {
+    from{color: black;}
+    to{color: rgb(31, 175, 31);}
 }
 
 .top-content {
@@ -204,4 +220,45 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .header .nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .nav a {
+        font-size: 30px;
+        padding: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    .middle-content .boxes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    footer nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer nav a {
+        padding: 30px;
+    }
 }
